@@ -68,16 +68,17 @@ function playGame() {
         let result = playRound();
         console.log(result);
 
-        if (count > 5) {
+        if (u_score == 3) {
+            alert("You win!");
             break;
         }
-    }
-
-    //win-lose messages
-    if (u_score == 3 || u_score > c_score) {
-        alert("You win!!");
-    } else if (c_score == 3 || c_choice > u_choice) {
-        alert("You lose!");
+        else if (c_score == 3) {
+            alert("You lose!");
+            break
+        }
+        else if (count > 5) {
+            break;
+        }
     }
 }
 
