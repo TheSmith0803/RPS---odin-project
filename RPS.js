@@ -1,6 +1,7 @@
 /**ROCK PAPER SCISSORS*/
 
 //use an array to store all possible choices and count for round number
+//init variables for computer and user choices
 const choices = ["rock", "paper", "scissors"];
 let count = 1;
 let c_choice;
@@ -54,10 +55,11 @@ function playRound() {
     count++;
 }
 
-//define a count for games played and player scores
+//define player scores
 let c_score = 0;
 let u_score = 0;
 
+//game loop
 while (count <= 5) {
     alert(`Current round: ${count}`);
     c_choice = choices[getComputerChoice()];
@@ -70,10 +72,9 @@ while (count <= 5) {
     }
 }
 
+//win-lose messages
 if (u_score == 3 || u_score > c_score) {
     alert("You win!!");
 } else if (c_score == 3 || c_choice > u_choice) {
     alert("You lose!");
 }
-
-//conditionals for scenarios
