@@ -82,7 +82,7 @@ function playGame() {
 }
 
 playGame();
-
+/** 
 let play_again = prompt("Would you like to play again? (type y or n)").toLowerCase();
 
 while (play_again) {
@@ -92,9 +92,9 @@ while (play_again) {
         count = 1;
         playGame();
     } else if (play_again == "n") {
-        alert("poop");
+        alert("Goodbye!");
         break
     } else {
         alert("nah fam");
     }
-}
+}*/
