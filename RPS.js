@@ -83,19 +83,3 @@ function playGame() {
 }
 
 playGame();
-/** 
-let play_again = prompt("Would you like to play again? (type y or n)").toLowerCase();
-
-while (play_again) {
-    if (play_again == "y") {
-        u_score = 0;
-        c_score = 0;
-        count = 1;
-        playGame();
-    } else if (play_again == "n") {
-        alert("Goodbye!");
-        break
-    } else {
-        alert("nah fam");
-    }
-}*/
