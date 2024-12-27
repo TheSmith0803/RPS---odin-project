@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: monospace;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -120,9 +123,6 @@ header {
 #results {
     margin-top: 10px;
     color:#00000000;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 footer {
