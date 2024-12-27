@@ -59,27 +59,4 @@ function playRound() {
 let c_score = 0;
 let u_score = 0;
 
-//game loop
-function playGame() {
-    while (count <= 5) {
-        alert(`Current round: ${count}`);
-        c_choice = choices[getComputerChoice()];
-        u_choice = getUserChoice();
-        let result = playRound();
-        console.log(result);
-
-        if (u_score == 3) {
-            alert("You win!");
-            break;
-        }
-        else if (c_score == 3) {
-            alert("You lose!");
-            break
-        }
-        else if (count > 5) {
-            break;
-        }
-    }
-}
-
 playGame();
