@@ -1,24 +1,59 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: monospace;
 }
 
 body {
     height: 100vh;
+    background-color: #aaf;
 }
 
 header {
     background-image: linear-gradient(to right, #227, #55f);
     height: 10vh;
     border-bottom: 4px ridge #005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    overflow: hidden;
 }
 
-#buttons {
-    height: 75vh; 
-    background-color: #aaf;
+.header-text {
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+    color: #005;
+    text-shadow: 3px 3px 5px #000;
+    animation: marquee 25s linear infinite;
+}
+
+.header-text > span {
+    transform: scaleY(170%);
+}
+
+/*Animation for header text*/
+
+@keyframes marquee {
+    from {
+        transform: translateX(25%) scaleY(170%);
+    }
+    to {
+        transform: translate(-25%) scaleY(170%);
+    }
+}
+
+#container {
+    width: 100%;
+}
+
+.desc-text {
+    text-align: center;
+}
+
+.buttons {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 #rock-button,
@@ -33,7 +68,7 @@ header {
 footer {
     position: fixed;
     background-image: linear-gradient(to left, #227, #55f);
-    height: 15vh;
+    height: 10vh;
     left: 0;
     bottom: 0;
     width: 100%;
