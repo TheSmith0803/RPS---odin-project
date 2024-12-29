@@ -79,7 +79,6 @@ header {
     width: 250px;
     height: 125px;
     font-size: 40px;
-    text-align: center;
     margin: 0 15px;
     border: none;
     border-radius: 10px;
@@ -98,6 +97,45 @@ header {
     transition: none;
     color: #555;
     background-color: #002;
+    box-shadow: none;
+}
+
+#play-again {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yes,
+.no {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 2px#000;
+    transition: 0.25s ease-in-out;
+}
+
+.yes{left:35%;}
+.no{left:51%;}
+
+.yes:hover {
+    background-color: #070;
+    transform: translateY(-5px);
+}
+.no:hover {
+    background-color: #700;
+    transform: translateY(-5px);
+}
+.yes:active,
+.no:active {
+    color:#fff;
+    transition: none;
     box-shadow: none;
 }
 

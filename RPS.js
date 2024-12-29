@@ -3,7 +3,7 @@
 //use an array to store all possible choices and count for round number
 //init variables for computer and user choices
 const choices = ["Rock", "Paper", "Scissors"];
-let count = 0;
+let count = 5;
 let humanScore = 0;
 let computerScore = 0;
 
@@ -25,6 +25,8 @@ const results = document.querySelector("#results");
 //REMOVE! makes results ALWAYS visible
 //results.style["color"] = "#000";
 
+
+//FIGURE OUT HOW TO HANDLE GAME LOOP?
 //loop to handle each buttonn
 for (let i = 0; i < buttons_arr.length; i++) {
 
@@ -76,23 +78,25 @@ for (let i = 0; i < buttons_arr.length; i++) {
 
         //conditional for extra text at end of game
         if (count >= 5) {
-            results.innerHTML = "<div><br>Would you like play again?</div>";
+            results.innerHTML = `<div id="play-again">Would you like play again?<br>
+            <div id="yn-buttons">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+            </div>`;
+
+            const yesBtn = document.querySelector(".yes");
+            const noBtn = document.querySelector(".no")
+
+            yesBtn.addEventListener("click", () => {
+                count = 0;
+                rounds.textContent = `Rounds played: ${count}`;
+            });
+
+            noBtn.addEventListener("click", () => {
+                rounds.innerHTML = `Thanks for playing! <a href="https://github.com/TheSmith0803" target="_blank">My Github</a>`
+            });
         }
     });
 }
-
-while (count >= 5) {
-    results.textContent += "?????"
-}
-
-
-
-
-
-
-//console.log(u_choice);
-
-//define player scores
-let c_score = 0;
-let u_score = 0;
 
