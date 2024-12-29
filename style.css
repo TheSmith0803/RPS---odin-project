@@ -146,6 +146,7 @@ header {
 #scores {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .no-score {
