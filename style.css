@@ -68,15 +68,13 @@ header {
     font-size: 20px;
 }
 
-#buttons {
+#button-container {
     display: flex;
     justify-content: center;
     margin: 50px 0px;
 }
 
-#rock-button,
-#paper-button,
-#scissors-button {
+.button {
     text-align: center;
     width: 250px;
     height: 125px;
@@ -90,17 +88,13 @@ header {
     transition: 0.25s ease-in-out;
 }
 
-#rock-button:hover,
-#paper-button:hover,
-#scissors-button:hover {
+.button:hover {
     background-color: #005;
     color: #fff;
     transform: translateY(-5px);
 }
 
-#rock-button:active,
-#paper-button:active,
-#scissors-button:active {
+.button:active {
     transition: none;
     color: #555;
     background-color: #002;
