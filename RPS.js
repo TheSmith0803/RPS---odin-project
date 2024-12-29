@@ -17,7 +17,6 @@ function getComputerChoice() {
 //variables for each button
 const buttons = document.querySelectorAll(".button");
 let buttons_arr = Array.from(buttons);
-console.log(buttons_arr[0].textContent);
 
 //variable for rounds played and displaying choices
 const rounds = document.querySelector("#count");
