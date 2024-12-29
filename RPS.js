@@ -27,9 +27,6 @@ const results = document.querySelector("#results");
 //results.style["color"] = "#000";
 
 
-//FIGURE OUT HOW TO HANDLE GAME LOOP?
-
-
 for (let i = 0; i < buttons_arr.length; i++) {
 
     //event listener for button interaction.
